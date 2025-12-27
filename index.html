@@ -40,8 +40,6 @@
             </nav>
         </header>
 
-        
-
         <main>
             <!--Anidacion de elementos-->
             <p>+15 años de experiencia como <strong>Ingeniero de Software</strong>. Creador y divulgador de programación.</p>
@@ -141,7 +139,8 @@
             <button id="show">Ver más información</button>
 
             <script>
-                window.show.addEventListener('click', () => { window.dialog.showModal()
+                window.show.addEventListener('click', () => { 
+                    window.dialog.showModal()
                 })
 
                 window.hide.addEventListener('click', () => {
@@ -178,18 +177,16 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend Información adicional>
+                        <legend>Información adicional</legend>
                             <div>
                                 <label>Teléfono:
                                     <input type="tel" name="tel" placeholder="# de teléfono" required pattern="[0-9]{9}">
                                 </label>
                             </div>
-                        </legend>
                     </fieldset>
 
                     <fieldset>
                         <legend>Otros</legend>
-
                         <div>
                             <label for="why">¿Por qué quieres contactar?</label>
                             <select name="why" id="why">
@@ -221,7 +218,6 @@
                     <button>Enviar contacto</button>
                 </form>
             </section>
-        
         </main>
         
         <footer>
